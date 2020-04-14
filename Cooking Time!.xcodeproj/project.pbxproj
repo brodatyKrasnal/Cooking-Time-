@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		058BDB772445BA0E00715173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB762445BA0E00715173 /* AppDelegate.swift */; };
 		058BDB792445BA0E00715173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB782445BA0E00715173 /* SceneDelegate.swift */; };
-		058BDB7B2445BA0E00715173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB7A2445BA0E00715173 /* ViewController.swift */; };
+		058BDB7B2445BA0E00715173 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB7A2445BA0E00715173 /* MainScreenViewController.swift */; };
 		058BDB7E2445BA0E00715173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058BDB7C2445BA0E00715173 /* Main.storyboard */; };
-		058BDB812445BA0E00715173 /* Cooking_Time_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB7F2445BA0E00715173 /* Cooking_Time_.xcdatamodeld */; };
 		058BDB832445BA0F00715173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058BDB822445BA0F00715173 /* Assets.xcassets */; };
 		058BDB862445BA0F00715173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058BDB842445BA0F00715173 /* LaunchScreen.storyboard */; };
+		058BDB932445E87A00715173 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB922445E87A00715173 /* Model.swift */; };
+		058BDB952445E9B700715173 /* PastaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB942445E9B700715173 /* PastaViewController.swift */; };
+		058BDB972445E9CD00715173 /* EggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB962445E9CD00715173 /* EggsViewController.swift */; };
+		058BDB992445E9DB00715173 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB982445E9DB00715173 /* TimerViewController.swift */; };
+		058BDB9B2445F55200715173 /* PlaySounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BDB9A2445F55200715173 /* PlaySounds.swift */; };
+		059CD89F24460DD6003E2BF5 /* countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 059CD89D24460DD6003E2BF5 /* countdown.mp3 */; };
+		059CD8A024460DD6003E2BF5 /* final_countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 059CD89E24460DD6003E2BF5 /* final_countdown.mp3 */; };
+		059CD8A22446113E003E2BF5 /* clock_timer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 059CD8A12446113D003E2BF5 /* clock_timer.mp3 */; };
+		059CD8A424461F6D003E2BF5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CD8A324461F6D003E2BF5 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		058BDB732445BA0E00715173 /* Cooking Time!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cooking Time!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		058BDB762445BA0E00715173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		058BDB782445BA0E00715173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		058BDB7A2445BA0E00715173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		058BDB7A2445BA0E00715173 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		058BDB7D2445BA0E00715173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		058BDB802445BA0E00715173 /* Cooking_Time_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cooking_Time_.xcdatamodel; sourceTree = "<group>"; };
 		058BDB822445BA0F00715173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058BDB852445BA0F00715173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		058BDB872445BA0F00715173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		058BDB922445E87A00715173 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		058BDB942445E9B700715173 /* PastaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaViewController.swift; sourceTree = "<group>"; };
+		058BDB962445E9CD00715173 /* EggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsViewController.swift; sourceTree = "<group>"; };
+		058BDB982445E9DB00715173 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		058BDB9A2445F55200715173 /* PlaySounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySounds.swift; sourceTree = "<group>"; };
+		059CD89D24460DD6003E2BF5 /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
+		059CD89E24460DD6003E2BF5 /* final_countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = final_countdown.mp3; sourceTree = "<group>"; };
+		059CD8A12446113D003E2BF5 /* clock_timer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clock_timer.mp3; sourceTree = "<group>"; };
+		059CD8A324461F6D003E2BF5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +74,48 @@
 		058BDB752445BA0E00715173 /* Cooking Time! */ = {
 			isa = PBXGroup;
 			children = (
+				059CD8A12446113D003E2BF5 /* clock_timer.mp3 */,
+				059CD89D24460DD6003E2BF5 /* countdown.mp3 */,
+				059CD89E24460DD6003E2BF5 /* final_countdown.mp3 */,
+				058BDB912445C3C800715173 /* Model */,
+				058BDB8F2445C3B700715173 /* View */,
+				058BDB902445C3C000715173 /* Controi */,
+				058BDB822445BA0F00715173 /* Assets.xcassets */,
 				058BDB762445BA0E00715173 /* AppDelegate.swift */,
 				058BDB782445BA0E00715173 /* SceneDelegate.swift */,
-				058BDB7A2445BA0E00715173 /* ViewController.swift */,
-				058BDB7C2445BA0E00715173 /* Main.storyboard */,
-				058BDB822445BA0F00715173 /* Assets.xcassets */,
 				058BDB842445BA0F00715173 /* LaunchScreen.storyboard */,
 				058BDB872445BA0F00715173 /* Info.plist */,
-				058BDB7F2445BA0E00715173 /* Cooking_Time_.xcdatamodeld */,
 			);
 			path = "Cooking Time!";
+			sourceTree = "<group>";
+		};
+		058BDB8F2445C3B700715173 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				058BDB7C2445BA0E00715173 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		058BDB902445C3C000715173 /* Controi */ = {
+			isa = PBXGroup;
+			children = (
+				058BDB7A2445BA0E00715173 /* MainScreenViewController.swift */,
+				058BDB942445E9B700715173 /* PastaViewController.swift */,
+				058BDB962445E9CD00715173 /* EggsViewController.swift */,
+				058BDB982445E9DB00715173 /* TimerViewController.swift */,
+			);
+			path = Controi;
+			sourceTree = "<group>";
+		};
+		058BDB912445C3C800715173 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				058BDB922445E87A00715173 /* Model.swift */,
+				059CD8A324461F6D003E2BF5 /* Product.swift */,
+				058BDB9A2445F55200715173 /* PlaySounds.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059CD89F24460DD6003E2BF5 /* countdown.mp3 in Resources */,
+				059CD8A22446113E003E2BF5 /* clock_timer.mp3 in Resources */,
 				058BDB862445BA0F00715173 /* LaunchScreen.storyboard in Resources */,
+				059CD8A024460DD6003E2BF5 /* final_countdown.mp3 in Resources */,
 				058BDB832445BA0F00715173 /* Assets.xcassets in Resources */,
 				058BDB7E2445BA0E00715173 /* Main.storyboard in Resources */,
 			);
@@ -141,10 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058BDB7B2445BA0E00715173 /* ViewController.swift in Sources */,
-				058BDB812445BA0E00715173 /* Cooking_Time_.xcdatamodeld in Sources */,
+				058BDB972445E9CD00715173 /* EggsViewController.swift in Sources */,
+				058BDB952445E9B700715173 /* PastaViewController.swift in Sources */,
+				058BDB7B2445BA0E00715173 /* MainScreenViewController.swift in Sources */,
+				058BDB992445E9DB00715173 /* TimerViewController.swift in Sources */,
 				058BDB772445BA0E00715173 /* AppDelegate.swift in Sources */,
+				058BDB9B2445F55200715173 /* PlaySounds.swift in Sources */,
 				058BDB792445BA0E00715173 /* SceneDelegate.swift in Sources */,
+				059CD8A424461F6D003E2BF5 /* Product.swift in Sources */,
+				058BDB932445E87A00715173 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,19 +398,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		058BDB7F2445BA0E00715173 /* Cooking_Time_.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				058BDB802445BA0E00715173 /* Cooking_Time_.xcdatamodel */,
-			);
-			currentVersion = 058BDB802445BA0E00715173 /* Cooking_Time_.xcdatamodel */;
-			path = Cooking_Time_.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 058BDB6B2445BA0E00715173 /* Project object */;
 }
