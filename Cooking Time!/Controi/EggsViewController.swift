@@ -46,6 +46,7 @@ class EggsViewController: UIViewController{
     @IBAction func runTimer(_ sender: UIButton) {
         timer?.invalidate() // if double pressed
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(counterMechanism), userInfo: nil, repeats: true)
+        
     }
     
     @IBAction func returnCommand(_ sender: UIButton) {
@@ -59,6 +60,8 @@ class EggsViewController: UIViewController{
 extension EggsViewController {
     
     @objc func counterMechanism() {
+        // print remoaning time as the button label
+        runTimeButtonLabel.setTitle(item.remainingTime(countDown), for: .normal)
         countDown -= 1
         print("\(countDown) seconds left") //to check
         

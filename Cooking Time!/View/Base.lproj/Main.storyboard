@@ -498,6 +498,7 @@
                     <connections>
                         <outlet property="counterLabels" destination="ask-Dg-lg2" id="GYc-mB-y1b"/>
                         <outlet property="progressBar" destination="czu-wT-E3S" id="oKd-Hx-zpa"/>
+                        <outlet property="runButtonLabel" destination="3E5-qk-i2W" id="DvX-WC-qn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANM-CU-5Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

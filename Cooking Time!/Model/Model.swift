@@ -18,7 +18,7 @@ struct Item {
     ]
     
     let pasta = [
-        Product(name: "raviolli", time: 60, desc: "Square shaped sheets of dough are stuffed with cheese, figs, meat or vegetables and boiled. Ravioli is usually cooked with light sauces because the pasta itself is so rich."),
+        Product(name: "raviolli", time: 600, desc: "Square shaped sheets of dough are stuffed with cheese, figs, meat or vegetables and boiled. Ravioli is usually cooked with light sauces because the pasta itself is so rich."),
         Product(name: "spaghetti", time: 480, desc: "An American favourite, spaghetti goes well with sauces that have oil or cream in them. It needs to be soft at all times so that you can slurp the long strands in all at once."),
         Product(name: "penne", time: 660, desc: "A cylindrical pasta, this one is slightly hard and takes longer to cook but it pairs really well with chunky and cream-based sauces and vegetables. "),
         Product(name: "macaroni", time: 480, desc: "Also known as elbow macaroni, this shape of pasta is usually used to make mac and cheese. But you can also mix it up with some vegetables and thick cheese sauce."),
@@ -107,16 +107,19 @@ struct Item {
         }
     }
     
-//    func remainingTime (time remaining: Int) -> String {
-//        var minutes: Int
-//        var seconds: Int
-//
-//        minutes = Int(remaining / 60)
-//        seconds = Int (remaining % 60)
-//        print(minutes)
-//        print(seconds)
-//        return "\(minutes):\(seconds)"
-//    }
+ var remainingTime: (Int) -> String = { time in
+        
+        let minutes = String (time / 60)
+        var seconds = String (time % 60)
+
+        if time % 60 < 10 {
+            seconds = "0\(seconds)"
+        }
+        
+        print(minutes)
+        print(seconds)
+        return "\(minutes):\(seconds)"
+    }
     
 }
 

@@ -61,6 +61,8 @@ class PastaViewController: UIViewController {
 extension PastaViewController {
     
     @objc func counter () {
+        // print remoaning time as the button label
+        setTimeLabel.setTitle(item.remainingTime(cookingTime), for: .normal)
         cookingTime -= 1
         progressBar.progress = 1 - (Float(cookingTime) / Float(slicerMax))
         if cookingTime == 31 {

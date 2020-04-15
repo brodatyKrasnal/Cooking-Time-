@@ -12,12 +12,14 @@ class TimerViewController: UIViewController {
     
     @IBOutlet weak var counterLabels: UIDatePicker!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var runButtonLabel: UIButton!
     
     var minutesToCountDown: Double = 0.0
     var countDown: Float = 0.0
     
+    let item = Item()
     var timer: Timer?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.progress = 0
@@ -29,11 +31,11 @@ class TimerViewController: UIViewController {
         countDown = Float(sender.countDownDuration)
         minutesToCountDown = sender.countDownDuration
     }
-
+    
     @IBAction func runButton(_ sender: UIButton) {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countdown), userInfo: nil, repeats: true)
     }
-
+    
     
     @IBAction func returnCommand(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
@@ -43,26 +45,28 @@ class TimerViewController: UIViewController {
 //MARK: - Timer Countdown Mechanism
 extension TimerViewController {
     
-@objc func countdown () {
-    progressBar.progress = 1 - (countDown / Float(minutesToCountDown))
-    print(countDown)
-    countDown -= 1
-    counterLabels.countDownDuration = TimeInterval(countDown)
-    
-    if countDown == 31 {
-        playSound(sound: "clock_timer", type: "mp3")
-        progressBar.trackTintColor = .red
+    @objc func countdown () {
+        progressBar.progress = 1 - (countDown / Float(minutesToCountDown))
+        // print remoaning time as the button label
+        runButtonLabel.setTitle(item.remainingTime(Int(countDown)), for: .normal)
+        print(countDown)
+        countDown -= 1
+        counterLabels.countDownDuration = TimeInterval(countDown)
+        
+        if countDown == 31 {
+            playSound(sound: "clock_timer", type: "mp3")
+            progressBar.trackTintColor = .red
+        }
+        
+        if countDown <= 0 {
+            playSound(sound: "final_countdown", type: "mp3")
+            timer?.invalidate()
+            timer = nil
+        }
+        
+        if countDown < 0 {
+            timer = nil
+            timer?.invalidate()
+        }
     }
-    
-    if countDown <= 0 {
-        playSound(sound: "final_countdown", type: "mp3")
-        timer?.invalidate()
-        timer = nil
-    }
-    
-    if countDown < 0 {
-        timer = nil
-        timer?.invalidate()
-    }
-}
 }
